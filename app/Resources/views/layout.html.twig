@@ -8,58 +8,45 @@
 
     {% block stylesheets %}
         {# On charge le CSS de bootstrap depuis le site directement #}
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        {# On charge jQuery UI depuis le site directement #}
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.css">
+        {# On charge le CSS de bootstrap-datepicker depuis le site directement #}
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/css/bootstrap-datepicker.min.css">
+        <link rel="stylesheet" href="{{ asset('css/booking.css') }}">
+
     {% endblock %}
 </head>
 
 <body>
     <div class="container">
-        <div id="header" class="row">
-            <div class="col-sm-3 text-center">
-                <a href="/" title="Accueil"><img src="louvre_logo.png" class="img-responsive" alt="louvre_logo" /></a>
+        <div id="header" class="row well">
+            <div class="col-sm-2 text-center">
+                <a href="booking" title="Accueil"><img src="{{ asset('images/louvre_logo.png') }}" alt="louvre_logo"/></a>
             </div>
-            <div class="col-sm-6 text-center">
+
+            <div class="col-sm-8 text-center">
                 <h1>Billetterie Officielle du Musée du Louvre</h1>
                 <h2>Réservation en ligne</h2>
             </div>
-            <div id="langue" class="col-sm-3 text-center">
-                <h3>Langue:</h3>
-            </div>
-        </div>
 
-        <div id="breadcrumb">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item active">Choix de la date</li>
-                <li>Votre panier</li>
-                <li>Confirmation</li>
-                <li>Paiement</li>
-                <li>Récapitulatif</li>
-            </ol>
+            <div class="col-sm-2">
+                <div class = "btn-group">
+                    <button class="btn btn-default dropdown-toggle" id = "dropdownMenu" data-toggle = "dropdown">
+                        Langue : fr
+                        <span class = "caret"></span>
+                    </button>
+                    <ul class = "dropdown-menu">
+                        <li><a href = "#">Français</a></li>
+                        <li><a href = "#">Anglais</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
 
         <div id="content" class="row">
-            <div class="col-sm-9 text-center">
-                {% block body %}
-                {% endblock %}
-            </div>
-            <aside class="col-sm-3">
-                <h4>Votre panier</h4>
-            </aside>
-        </div>
-
-        <div id="tarif" class="row">
-            <div class="col-sm-9 text-center">
-                <h3>Tarification</h3>
-                <ul class="list-unstyled list-group">
-                    <li class="list-group-item">Tarif normal : 16 € ( pour les 13 à 60 ans )</li>
-                    <li class="list-group-item">Tarif enfant :  8 € ( pour les  4 à 12 ans )</li>
-                    <li class="list-group-item">Tarif sénior : 12 € ( à partir de 60 ans )</li>
-                    <li class="list-group-item">Tarif réduit : 10 € <br/>
-                        ( étudiants, militaires, employés du musée ou d'un service du Ministère de la Culture )</li>
-                    <li class="list-group-item">Tarif demi-journée : 8 €</li>
-                    <li class="list-group-item">Entrée gratuite pour les enfants de moins de 4 ans</li>
-                </ul>
-            </div>
+            {% block body %}
+            {% endblock %}
         </div>
 
         <footer class="row text-center">
@@ -70,8 +57,46 @@
 
     {% block javascripts %}
         {# Ajoutons ces lignes JavaScript pour nous servir des fonctionnalités du bootstrap Twitter et de jQuery UI #}
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        <script
+                src="https://code.jquery.com/jquery-3.3.1.min.js"
+                integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+                crossorigin="anonymous">
+        </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/js/bootstrap-datepicker.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/locales/bootstrap-datepicker.fr.min.js"></script>
+        <script>
+            $.fn.datepicker.dates['fr'] = {
+                days: ["Dimanche", "Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi"],
+                daysShort: ["Dim.", "Lun.", "Mar.", "Mer.", "Jeu.", "Ven.", "Sam."],
+                daysMin: ["d", "l", "ma", "me", "j", "v", "s"],
+                months: ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"],
+                monthsShort: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+                today: "Aujourd'hui",
+                clear: "Effacer",
+                format: "dd/mm/yyyy",
+                titleFormat: "MM yyyy",
+                weekStart: 1
+            };
+
+            $('#datepicker').datepicker({
+                language: 'fr',
+                autoclose: true,
+                todayHighlight: true,
+                daysOfWeekDisabled: "2",
+                startDate: '0',
+                endDate: '+2y',
+                daysOfWeekHighlighted: '0',
+                datesDisabled: ['01/11/2018','01/05/2019','01/11/2019','25/12/2019','01/05/2020']
+            });
+
+            $('#datepicker').on('changeDate', function() {
+                $('#my_hidden_input').val(
+                    $('#datepicker').datepicker('getFormattedDate')
+                );
+            });
+        </script>
     {% endblock %}
 </body>
 </html>

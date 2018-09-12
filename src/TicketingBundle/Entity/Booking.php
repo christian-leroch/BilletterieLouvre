@@ -5,6 +5,7 @@
 namespace TicketingBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * Booking
@@ -26,6 +27,8 @@ class Booking
     /**
      * @var \DateTime
      *
+     * @Assert\NotBlank()
+     * @Assert\Type("\DateTime")
      * @ORM\Column(name="date", type="date")
      */
     private $date;
@@ -33,6 +36,7 @@ class Booking
     /**
      * @var string
      *
+     * @Assert\NotBlank()
      * @ORM\Column(name="ticketType", type="string", length=255)
      */
     private $ticketType;

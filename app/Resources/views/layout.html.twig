@@ -66,37 +66,7 @@
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/js/bootstrap-datepicker.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/locales/bootstrap-datepicker.fr.min.js"></script>
-        <script>
-            $.fn.datepicker.dates['fr'] = {
-                days: ["Dimanche", "Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi"],
-                daysShort: ["Dim.", "Lun.", "Mar.", "Mer.", "Jeu.", "Ven.", "Sam."],
-                daysMin: ["d", "l", "ma", "me", "j", "v", "s"],
-                months: ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"],
-                monthsShort: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
-                today: "Aujourd'hui",
-                clear: "Effacer",
-                format: "dd/mm/yyyy",
-                titleFormat: "MM yyyy",
-                weekStart: 1
-            };
-
-            $('#datepicker').datepicker({
-                language: 'fr',
-                autoclose: true,
-                todayHighlight: true,
-                daysOfWeekDisabled: "0,2",
-                startDate: '0',
-                endDate: '+2y',
-                daysOfWeekHighlighted: '0',
-                datesDisabled: ['01/11/2018','01/05/2019','01/11/2019','25/12/2019','01/05/2020']
-            });
-
-            $('#datepicker').on('changeDate', function() {
-                $('#my_hidden_input').val(
-                    $('#datepicker').datepicker('getFormattedDate')
-                );
-            });
-        </script>
+        <script src="{{ asset('js/datepicker.js') }}"></script>
     {% endblock %}
 </body>
 </html>

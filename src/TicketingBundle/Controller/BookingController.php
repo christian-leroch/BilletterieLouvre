@@ -14,7 +14,9 @@ use TicketingBundle\Form\BookingType;
 class BookingController extends Controller
 {
     /**
-     * @Route("/booking")
+     * Matches /booking exactly
+     *
+     * @Route("/booking", name="booking_index"))
      */
     public function indexAction(Request $request)
     {
@@ -44,5 +46,15 @@ class BookingController extends Controller
         return $this->render('booking/index.html.twig', array(
             'form' => $form->createView(),
         ));
+    }
+
+    /**
+     * * Matches /details exactly
+     *
+     * @Route("/details", name="booking_details"))
+     */
+    public function detailsAction()
+    {
+        return $this->render('booking/details.html.twig');
     }
 }

@@ -7,7 +7,7 @@
 {% endblock %}
 
 {% block body %}
-    <div id="breadcrumb">
+    <div id="breadcrumb" xmlns="http://www.w3.org/1999/html">
         <ol class="breadcrumb well">
             <li class="breadcrumb-item active">Choix de la date</li>
             <li>Votre panier</li>
@@ -24,15 +24,20 @@
 
         {{ form_errors(form) }}
 
-        <h5>1 . Choisissez la date de votre visite</h5>
+        {{ form_row(form.date) }}
+
         <div id="datepicker" data-date="now"></div>
         <input type="hidden" id="my_hidden_input">
 
         {{ form_row(form.ticketType) }}
         {{ form_label(form.nbTicket, '3 . Choisissez le nombre de billets souhaités' ) }}
         {{ form_row(form.nbTicket) }}
-        {{ form_row(form.save) }}
-        {{ form_row(form.nextstep) }}
+
+        <input type="submit" value="Annuler" class="btn btn-danger" />
+        <input type="submit" value="Etape suivante" class="btn btn-primary" />
+
+        {{ form_end(form) }}
+
     </div>
 
     <div class="col-sm-5 text-center well">

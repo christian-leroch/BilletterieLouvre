@@ -40,11 +40,9 @@ function ClosingDays(an) {
     return closingDays;
 }
 
-function highlight(date) {
-    var calender_date = (date.getMonth() + 1) + '-' + ('0' + date.getDate()).slice(-2);
-    var searchHolidayIndex = $.inArray(calender_date, holiday);
-    console.log(calender_date, searchHolidayIndex);
-    if (searchHolidayIndex > -1) {
+function Highlight(date) {
+    var calender_date = date.getFullYear() + '-' + ('0' + (date.getMonth() + 1)).slice(-2) + '-' + ('0' + date.getDate()).slice(-2);
+    if (~holiday.indexOf(calender_date)) {
         return {
             classes: 'highlightedDates',
             tooltip: 'La Billetterie en ligne est fermée les dimanches et jours fériés. Réservation possible uniquement au guichet du musée.'
@@ -54,15 +52,14 @@ function highlight(date) {
 
 var today             = new Date();
 var an                = today.getFullYear();
-var today_formatted   = (today.getMonth() + 1) + '-' + ('0' + today.getDate()).slice(-2);
 var holiday           = JoursFeries(an);
-var closingDays   = ClosingDays(an);
+var closingDays       = ClosingDays(an);
 
 console.log(today, holiday.length);
 
 for (var i = 0; i < holiday.length; i++) {
     holiday[i] = JSON.stringify(holiday[i]);
-    holiday[i] = holiday[i].substring(6,11);
+    holiday[i] = holiday[i].substring(1,11);
     console.log(holiday[i]);
 }
 
@@ -93,9 +90,8 @@ $('#datepicker').datepicker({
     startDate: '0',
     endDate: '+2y',
     daysOfWeekHighlighted: '0',
-    beforeShowDay: highlight,
     datesDisabled: closingDays,
-
+    beforeShowDay: Highlight
 });
 
 $('#datepicker').on('changeDate', function() {

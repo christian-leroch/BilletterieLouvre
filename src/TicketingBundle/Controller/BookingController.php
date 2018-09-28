@@ -21,9 +21,9 @@ class BookingController extends Controller
     public function indexAction(Request $request)
     {
         $booking = new Booking();
-        $booking->setDate(new \DateTime('now'));
+        $booking->setTicketDate(new \DateTime('now'));
         $booking->setTicketType(false);
-        $booking->setNbTicket('1');
+        $booking->setNbTickets('1');
 
         $form = $this->createForm(BookingType::class, $booking);
 
@@ -40,7 +40,7 @@ class BookingController extends Controller
             // $entityManager->persist($task);
             // $entityManager->flush();
 
-            return $this->redirectToRoute('details');
+            return $this->render('booking/details.html.twig');
         }
 
         return $this->render('booking/index.html.twig', array(

@@ -6,6 +6,7 @@ namespace TicketingBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
+use TicketingBundle\Validator\Constraints as TicketingAssert;
 
 /**
  * Booking
@@ -28,10 +29,9 @@ class Booking
      * @var \DateTime
      *
      * @Assert\NotBlank()
-     * @Assert\Type("\DateTime")
-     * @ORM\Column(name="date", type="date")
+     * @ORM\Column(name="ticketDate", type="date")
      */
-    private $date;
+    private $ticketDate;
 
     /**
      * @var string
@@ -44,9 +44,9 @@ class Booking
     /**
      * @var int
      *
-     * @ORM\Column(name="nbTicket", type="integer")
+     * @ORM\Column(name="nbTickets", type="integer")
      */
-    private $nbTicket;
+    private $nbTickets;
 
     /**
      * @var int
@@ -81,27 +81,27 @@ class Booking
     }
 
     /**
-     * Set date
+     * Set ticketDate
      *
-     * @param \DateTime $date
+     * @param \DateTime $ticketDate
      *
      * @return Booking
      */
-    public function setDate($date)
+    public function setTicketDate($ticketDate)
     {
-        $this->date = $date;
+        $this->ticketDate = $ticketDate;
 
         return $this;
     }
 
     /**
-     * Get date
+     * Get ticketDate
      *
      * @return \DateTime
      */
-    public function getDate()
+    public function getTicketDate()
     {
-        return $this->date;
+        return $this->ticketDate;
     }
 
     /**
@@ -129,27 +129,27 @@ class Booking
     }
 
     /**
-     * Set nbTicket
+     * Set nbTickets
      *
-     * @param integer $nbTicket
+     * @param integer $nbTickets
      *
      * @return Booking
      */
-    public function setNbTicket($nbTicket)
+    public function setNbTickets($nbTickets)
     {
-        $this->nbTicket = $nbTicket;
+        $this->nbTickets = $nbTickets;
 
         return $this;
     }
 
     /**
-     * Get nbTicket
+     * Get nbTickets
      *
      * @return int
      */
-    public function getNbTicket()
+    public function getNbTickets()
     {
-        return $this->nbTicket;
+        return $this->nbTickets;
     }
 
     /**

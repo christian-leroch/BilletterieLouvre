@@ -10,14 +10,11 @@ h2 {
 h5 {
     font-weight: bold;
 }
+
 #datepicker {
     display: flex;
     flex-wrap : wrap;
     justify-content : center;
     margin: auto;
     max-width : 550px;
-}
-
-.highlightedDates {
-    background-color: #d9edf7;
 }

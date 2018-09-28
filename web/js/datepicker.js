@@ -24,7 +24,6 @@ function JoursFeries(an){
 
         joursFeries.push(JourAn, LundiPaques, FeteTravail, Victoire1945, Ascension, LundiPentecote, FeteNationale, Assomption, Toussaint, Armistice, Noel);
     }
-    console.log(joursFeries);
     return joursFeries;
 }
 
@@ -44,23 +43,20 @@ function Highlight(date) {
     var calender_date = date.getFullYear() + '-' + ('0' + (date.getMonth() + 1)).slice(-2) + '-' + ('0' + date.getDate()).slice(-2);
     if (~holiday.indexOf(calender_date)) {
         return {
-            classes: 'highlightedDates',
+            classes: 'highlighted',
             tooltip: 'La Billetterie en ligne est fermée les dimanches et jours fériés. Réservation possible uniquement au guichet du musée.'
         }
     }
 }
 
-var today             = new Date();
-var an                = today.getFullYear();
-var holiday           = JoursFeries(an);
-var closingDays       = ClosingDays(an);
-
-console.log(today, holiday.length);
+var today       = new Date();
+var an          = today.getFullYear();
+var holiday     = JoursFeries(an);
+var closingDays = ClosingDays(an);
 
 for (var i = 0; i < holiday.length; i++) {
     holiday[i] = JSON.stringify(holiday[i]);
     holiday[i] = holiday[i].substring(1,11);
-    console.log(holiday[i]);
 }
 
 for (var j = 0; j < closingDays.length; j++) {
@@ -86,12 +82,13 @@ $('#datepicker').datepicker({
     language: 'fr',
     autoclose: true,
     todayHighlight: true,
-    daysOfWeekDisabled: "0,2",
+    daysOfWeekDisabled: "2",
     startDate: '0',
     endDate: '+2y',
     daysOfWeekHighlighted: '0',
     datesDisabled: closingDays,
     beforeShowDay: Highlight
+
 });
 
 $('#datepicker').on('changeDate', function() {

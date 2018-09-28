@@ -9,7 +9,7 @@
 {% block body %}
     <div id="breadcrumb" xmlns="http://www.w3.org/1999/html">
         <ol class="breadcrumb well">
-            <li class="breadcrumb-item active">Choix de la date</li>
+            <li class="breadcrumb-item active">Choix de la ticketDate</li>
             <li>Votre panier</li>
             <li>Confirmation</li>
             <li>Paiement</li>
@@ -24,18 +24,28 @@
 
         {{ form_errors(form) }}
 
-        {{ form_row(form.date) }}
+        {% if not form.vars.valid %}
+            <div class="col-xs-6 col-xs-offset-4 alert alert-warning alert-dismissible mb-50 warningMessage">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                <p>{{ form_errors(form.ticketDate) }}</p>
+                <p>{{ form_errors(form.ticketType) }}</p>
+                <p>{{ form_errors(form.nbTickets) }}</p>
+            </div>
+        {% endif %}
 
-        <div id="datepicker" data-date="now"></div>
-        <input type="hidden" id="my_hidden_input">
+        <div id="datepicker" data-date="now">
+            <div style="display: none">{{ form_row(form.ticketDate) }}</div>
+        </div>
+
 
         {{ form_row(form.ticketType) }}
-        {{ form_label(form.nbTicket, '3 . Choisissez le nombre de billets souhaités' ) }}
-        {{ form_row(form.nbTicket) }}
+        {{ form_label(form.nbTickets, '3 . Choisissez le nombre de billets souhaités' ) }}
+        {{ form_row(form.nbTickets) }}
 
         <input type="submit" value="Annuler" class="btn btn-danger" />
         <input type="submit" value="Etape suivante" class="btn btn-primary" />
 
+        {{ form_rest(form) }}
         {{ form_end(form) }}
 
     </div>

@@ -9,7 +9,7 @@
 {% block body %}
     <div id="breadcrumb" xmlns="http://www.w3.org/1999/html">
         <ol class="breadcrumb well">
-            <li class="breadcrumb-item active">Choix de la ticketDate</li>
+            <li class="breadcrumb-item active">Choix de la date</li>
             <li>Votre panier</li>
             <li>Confirmation</li>
             <li>Paiement</li>
@@ -33,10 +33,10 @@
             </div>
         {% endif %}
 
+        {{ form_label(form.ticketDate) }}
         <div id="datepicker" data-date="now">
             <div style="display: none">{{ form_row(form.ticketDate) }}</div>
         </div>
-
 
         {{ form_row(form.ticketType) }}
         {{ form_label(form.nbTickets, '3 . Choisissez le nombre de billets souhaités' ) }}

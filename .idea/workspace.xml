@@ -4,10 +4,8 @@
     <list default="true" id="bde467d1-9a5e-4132-92a8-f29ef90a0dbd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Resources/views/Booking/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/Booking/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TicketingBundle/Controller/BookingController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/TicketingBundle/Controller/BookingController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TicketingBundle/Entity/Booking.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/TicketingBundle/Entity/Booking.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TicketingBundle/Form/BookingType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/TicketingBundle/Form/BookingType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/css/booking.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/booking.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/js/datepicker.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/datepicker.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,7 +21,7 @@
     <session id="-1442410912">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="40" />
+          <entry key="project.closed" value="46" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.151" value="1" />
@@ -32,12 +30,12 @@
           <entry key="project.open.time.24" value="1" />
           <entry key="project.open.time.27" value="1" />
           <entry key="project.open.time.28" value="2" />
-          <entry key="project.open.time.29" value="1" />
+          <entry key="project.open.time.29" value="3" />
           <entry key="project.open.time.30" value="2" />
           <entry key="project.open.time.31" value="3" />
-          <entry key="project.open.time.32" value="1" />
+          <entry key="project.open.time.32" value="2" />
           <entry key="project.open.time.33" value="1" />
-          <entry key="project.open.time.34" value="3" />
+          <entry key="project.open.time.34" value="4" />
           <entry key="project.open.time.35" value="2" />
           <entry key="project.open.time.37" value="1" />
           <entry key="project.open.time.39" value="1" />
@@ -49,11 +47,13 @@
           <entry key="project.open.time.59" value="1" />
           <entry key="project.open.time.60" value="1" />
           <entry key="project.open.time.65" value="1" />
+          <entry key="project.open.time.66" value="1" />
           <entry key="project.open.time.7" value="1" />
+          <entry key="project.open.time.74" value="1" />
           <entry key="project.open.time.77" value="1" />
-          <entry key="project.open.time.8" value="3" />
+          <entry key="project.open.time.8" value="4" />
           <entry key="project.open.time.98" value="1" />
-          <entry key="project.opened" value="40" />
+          <entry key="project.opened" value="47" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -61,24 +61,24 @@
           <entry key="css" value="5" />
           <entry key="dist" value="2" />
           <entry key="htaccess" value="1" />
-          <entry key="js" value="5" />
-          <entry key="json" value="2" />
-          <entry key="php" value="40" />
+          <entry key="js" value="12" />
+          <entry key="json" value="4" />
+          <entry key="php" value="158" />
           <entry key="png" value="2" />
-          <entry key="twig" value="25" />
-          <entry key="yml" value="38" />
+          <entry key="twig" value="30" />
+          <entry key="yml" value="42" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="5" />
           <entry key="Image" value="2" />
-          <entry key="JSON" value="2" />
-          <entry key="JavaScript" value="5" />
-          <entry key="PHP" value="40" />
+          <entry key="JSON" value="4" />
+          <entry key="JavaScript" value="12" />
+          <entry key="PHP" value="158" />
           <entry key="PLAIN_TEXT" value="2" />
-          <entry key="Twig" value="25" />
-          <entry key="YAML" value="38" />
+          <entry key="Twig" value="30" />
+          <entry key="YAML" value="42" />
           <entry key="htaccess" value="1" />
         </counts>
       </usages-collector>
@@ -86,26 +86,28 @@
         <counts>
           <entry key="css" value="309" />
           <entry key="dist" value="13" />
-          <entry key="dummy" value="17" />
-          <entry key="js" value="2993" />
-          <entry key="php" value="3960" />
-          <entry key="twig" value="6570" />
-          <entry key="yml" value="559" />
+          <entry key="dummy" value="22" />
+          <entry key="js" value="3003" />
+          <entry key="json" value="1" />
+          <entry key="php" value="5826" />
+          <entry key="twig" value="6580" />
+          <entry key="yml" value="603" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="315" />
-          <entry key="JavaScript" value="2993" />
-          <entry key="PHP" value="3960" />
-          <entry key="PLAIN_TEXT" value="30" />
-          <entry key="Twig" value="6564" />
-          <entry key="YAML" value="559" />
+          <entry key="JSON" value="1" />
+          <entry key="JavaScript" value="3003" />
+          <entry key="PHP" value="5826" />
+          <entry key="PLAIN_TEXT" value="35" />
+          <entry key="Twig" value="6574" />
+          <entry key="YAML" value="603" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.php.new.class">
         <counts>
-          <entry key="PHP Class.type" value="4" />
+          <entry key="PHP Class.type" value="29" />
         </counts>
       </usages-collector>
     </session>
@@ -113,63 +115,33 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/js/datepicker.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="774">
-              <caret line="97" column="3" selection-start-line="97" selection-start-column="3" selection-end-line="97" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/TicketingBundle/Controller/BookingController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3">
-              <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
-              <folding>
-                <element signature="e#103#160#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Resources/views/layout.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-477">
-              <caret line="24" column="25" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/TicketingBundle/Form/BookingType.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="267">
-              <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
-              <folding>
-                <element signature="e#84#124#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/css/booking.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/TicketingBundle/Entity/Booking.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="81">
-              <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+            <state relative-caret-position="162">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
               <folding>
                 <element signature="e#85#117#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/TicketingBundle/Validator/Constraints/NoHolidayClosingDaysDate.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="12" column="108" selection-start-line="12" selection-start-column="108" selection-end-line="12" selection-end-column="108" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/TicketingBundle/Validator/Constraints/NoHolidayClosingDaysDateValidator.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="441">
+              <caret line="33" column="1" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
+              <folding>
+                <element signature="e#140#183#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -178,8 +150,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Resources/views/Booking/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="39" selection-start-line="39" selection-end-line="39" />
+            <state relative-caret-position="243">
+              <caret line="37" column="76" lean-forward="true" selection-start-line="37" selection-start-column="76" selection-end-line="37" selection-end-column="76" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
               </folding>
@@ -208,22 +180,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/config/parameters.yml" />
-        <option value="$PROJECT_DIR$/app/config/parameters.yml.dist" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Controller/LuckyController.php" />
-        <option value="$PROJECT_DIR$/app/Resources/views/Lucky/number.html.twig" />
-        <option value="$PROJECT_DIR$/composer.json" />
-        <option value="$PROJECT_DIR$/src/TicketingBundle/Repository/BookingRepository.php" />
-        <option value="$PROJECT_DIR$/src/TicketingBundle/Controller/OrderController.php" />
-        <option value="$PROJECT_DIR$/app/Resources/config/services.yml" />
-        <option value="$PROJECT_DIR$/app/Resources/config/routing.yml" />
-        <option value="$PROJECT_DIR$/app/AppKernel.php" />
-        <option value="$PROJECT_DIR$/app/config/services.yml" />
-        <option value="$PROJECT_DIR$/app/config/routing.yml" />
-        <option value="$PROJECT_DIR$/app/Resources/views/blog/index.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
         <option value="$PROJECT_DIR$/web/booking.css" />
-        <option value="$PROJECT_DIR$/app/config/config.yml" />
         <option value="$PROJECT_DIR$/app/Resources/views/Booking/details.html.twig" />
         <option value="$PROJECT_DIR$/web/js/js.datepicker.js" />
         <option value="$PROJECT_DIR$/src/TicketingBundle/Validator/CheckDate.php" />
@@ -233,11 +191,46 @@
         <option value="$PROJECT_DIR$/src/TicketingBundle/Validator/Constraints/ContainsCheckDateValidator.php" />
         <option value="$PROJECT_DIR$/src/TicketingBundle/Validator/Constraints/CheckDateValidator.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/layout.html.twig" />
-        <option value="$PROJECT_DIR$/src/TicketingBundle/Entity/Booking.php" />
-        <option value="$PROJECT_DIR$/web/js/datepicker.js" />
         <option value="$PROJECT_DIR$/web/css/booking.css" />
         <option value="$PROJECT_DIR$/src/TicketingBundle/Form/BookingType.php" />
+        <option value="$PROJECT_DIR$/src/TicketingBundle/Validator/Constraints/InvalidDate.php" />
+        <option value="$PROJECT_DIR$/src/TicketingBundle/Validator/Constraints/No14HoursPastDate.php" />
+        <option value="$PROJECT_DIR$/src/TicketingBundle/Validator/Constraints/No14HoursPastDateValidator.php" />
+        <option value="$PROJECT_DIR$/src/TicketingBundle/Validator/Constraints/InvalidDateValidator.php" />
+        <option value="$PROJECT_DIR$/src/TicketingBundle/Validator/Constraints/No2YearsLaterDate.php" />
+        <option value="$PROJECT_DIR$/src/TicketingBundle/Validator/Constraints/NO2YearsLaterdateValidator.php" />
+        <option value="$PROJECT_DIR$/src/TicketingBundle/Validator/Constraints/No2YearsLaterdateValidator.php" />
+        <option value="$PROJECT_DIR$/src/TicketingBundle/Validator/Constraints/NoTuesdayDateValidator.php" />
+        <option value="$PROJECT_DIR$/src/TicketingBundle/Validator/Constraints/NoTuesdayDate.php" />
+        <option value="$PROJECT_DIR$/src/TicketingBundle/Validator/Constraints/NoPastDate.php" />
+        <option value="$PROJECT_DIR$/src/TicketingBundle/Validator/Constraints/NoPastDateValidator.php" />
+        <option value="$PROJECT_DIR$/src/TicketingBundle/Validator/Constraints/No14HourPastDate.php" />
+        <option value="$PROJECT_DIR$/src/TicketingBundle/Validator/Constraints/No17HourPastDate.php" />
+        <option value="$PROJECT_DIR$/src/TicketingBundle/Validator/Constraints/No21HourPastDate.php" />
+        <option value="$PROJECT_DIR$/src/TicketingBundle/Validator/Constraints/NoSundayDate.php" />
+        <option value="$PROJECT_DIR$/src/TicketingBundle/Validator/Constraints/NoClosingDaysHolidayDate.php" />
+        <option value="$PROJECT_DIR$/src/TicketingBundle/Validator/Constraints/NoHolydayDate.php" />
+        <option value="$PROJECT_DIR$/src/TicketingBundle/Validator/Constraints/NoHolidayDate.php" />
+        <option value="$PROJECT_DIR$/web/js/datepicker.js" />
+        <option value="$PROJECT_DIR$/app/Resources/TwigBundle/views/Exception/error.html.twig" />
+        <option value="$PROJECT_DIR$/src/TicketingBundle/EventListener/ExceptionListener.php" />
+        <option value="$PROJECT_DIR$/src/TicketingBundle/Exceptions/SessionNotFoundException.php" />
+        <option value="$PROJECT_DIR$/app/config/config.yml" />
+        <option value="$PROJECT_DIR$/src/TicketingBundle/Validator/Constraints/No2YearsLaterDateValidator.php" />
+        <option value="$PROJECT_DIR$/src/TicketingBundle/Validator/Constraints/No14HourPastDateValidator.php" />
+        <option value="$PROJECT_DIR$/src/TicketingBundle/Validator/Constraints/No21HourPastDateValidator.php" />
+        <option value="$PROJECT_DIR$/src/TicketingBundle/Validator/Constraints/No17HourPastDateValidator.php" />
+        <option value="$PROJECT_DIR$/src/TicketingBundle/Validator/Constraints/NoSundayDateValidator.php" />
+        <option value="$PROJECT_DIR$/src/TicketingBundle/Services/FrenchHolidayDatesManager.php" />
+        <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/app/config/services.yml" />
+        <option value="$PROJECT_DIR$/src/TicketingBundle/Service/FrenchHolidayDatesManager.php" />
+        <option value="$PROJECT_DIR$/src/TicketingBundle/Validator/Constraints/NoHolidayClosingDaysDate.php" />
+        <option value="$PROJECT_DIR$/src/TicketingBundle/Service/HolidayClosingDaysDatesManager.php" />
+        <option value="$PROJECT_DIR$/src/TicketingBundle/Validator/Constraints/NoHolidayDateValidator.php" />
+        <option value="$PROJECT_DIR$/src/TicketingBundle/Validator/Constraints/NoHolidayClosingDaysDateValidator.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/Booking/index.html.twig" />
+        <option value="$PROJECT_DIR$/src/TicketingBundle/Entity/Booking.php" />
       </list>
     </option>
   </component>
@@ -293,9 +286,9 @@
       <path value="$PROJECT_DIR$/vendor/doctrine/event-manager" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="13" />
-    <option name="y" value="353" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="14" />
+    <option name="y" value="398" />
     <option name="width" value="1886" />
     <option name="height" value="636" />
   </component>
@@ -333,6 +326,14 @@
             <path>
               <item name="BilletterieLouvre" type="b2602c69:ProjectViewProjectNode" />
               <item name="BilletterieLouvre" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="Booking" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BilletterieLouvre" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BilletterieLouvre" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -360,7 +361,22 @@
               <item name="BilletterieLouvre" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="TicketingBundle" type="462c0819:PsiDirectoryNode" />
-              <item name="Form" type="462c0819:PsiDirectoryNode" />
+              <item name="Service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BilletterieLouvre" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BilletterieLouvre" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="TicketingBundle" type="462c0819:PsiDirectoryNode" />
+              <item name="Validator" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BilletterieLouvre" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BilletterieLouvre" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="TicketingBundle" type="462c0819:PsiDirectoryNode" />
+              <item name="Validator" type="462c0819:PsiDirectoryNode" />
+              <item name="Constraints" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="BilletterieLouvre" type="b2602c69:ProjectViewProjectNode" />
@@ -472,20 +488,28 @@
       <workItem from="1537896248148" duration="1357000" />
       <workItem from="1537954064670" duration="21594000" />
       <workItem from="1538039558553" duration="24432000" />
+      <workItem from="1538119771402" duration="20774000" />
+      <workItem from="1538228298946" duration="10490000" />
+      <workItem from="1538266043564" duration="2901000" />
+      <workItem from="1538300307021" duration="3394000" />
+      <workItem from="1538382467683" duration="2919000" />
+      <workItem from="1538385712053" duration="20858000" />
+      <workItem from="1538415331049" duration="246000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="384949000" />
+    <option name="totallyTimeSpent" value="446531000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="41" y="279" width="1886" height="636" extended-state="0" />
+    <frame x="14" y="398" width="1886" height="636" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17250821" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1796276" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.62450594" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.62350595" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -494,34 +518,14 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.328877" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32868525" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.328877" />
+      <window_info anchor="bottom" id="Thumbnails" order="12" weight="0.32868525" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" />
     </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17250821" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.62450594" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.328877" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.328877" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -530,33 +534,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/Lucky/number.html.twig" />
-    <entry file="file://$PROJECT_DIR$/src/TicketingBundle/Repository/DetailRepository.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/LuckyController.php" />
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" />
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/AppBundle.php" />
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/default/index.html.twig" />
-    <entry file="file://$PROJECT_DIR$/app/Resources/config/services.yml" />
-    <entry file="file://$PROJECT_DIR$/app/Resources/config/routing.yml" />
-    <entry file="file://$PROJECT_DIR$/web/app_dev.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-299" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/.htaccess">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/TicketingBundle/Resources/config/routing.yml" />
-    <entry file="file://$PROJECT_DIR$/src/TicketingBundle/Resources/config/services.yml" />
     <entry file="file://$PROJECT_DIR$/app/Resources/views/blog/index.html.twig" />
     <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig" />
     <entry file="file://$PROJECT_DIR$/web/app.php">
@@ -577,13 +554,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="19" column="10" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/images/louvre_logo.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -601,24 +571,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="36" column="38" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/TicketingBundle/Repository/BookingRepository.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/services.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
         </state>
       </provider>
     </entry>
@@ -641,54 +597,12 @@
         <state relative-caret-position="-108" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/TicketingBundle/Validator/Constraints/CheckDate.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/TicketingBundle/Validator/Constraints/CheckDateValidator.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="39" column="13" lean-forward="true" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
-          <folding>
-            <element signature="e#126#171#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TicketingBundle/Validator/Constraints/CheckDate.php" />
+    <entry file="file://$PROJECT_DIR$/src/TicketingBundle/Validator/Constraints/CheckDateValidator.php" />
     <entry file="file://$PROJECT_DIR$/app/Resources/views/layout.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-477">
+        <state relative-caret-position="432">
           <caret line="24" column="25" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/TicketingBundle/Controller/BookingController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3">
-          <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
-          <folding>
-            <element signature="e#103#160#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/TicketingBundle/Entity/Booking.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
-          <folding>
-            <element signature="e#85#117#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/datepicker.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="774">
-          <caret line="97" column="3" selection-start-line="97" selection-start-column="3" selection-end-line="97" selection-end-column="3" />
         </state>
       </provider>
     </entry>
@@ -703,16 +617,228 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="267">
           <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TicketingBundle/Controller/BookingController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="11" column="2" selection-start-line="11" selection-end-line="11" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TicketingBundle/Validator/Constraints/NoPastDate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="55" selection-start-line="1" selection-start-column="55" selection-end-line="1" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TicketingBundle/Validator/Constraints/InvalidDate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" selection-start-column="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TicketingBundle/Validator/Constraints/No14HourPastDate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="20" selection-end-line="18" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-450">
+          <caret line="11" column="65" lean-forward="true" selection-start-line="11" selection-start-column="65" selection-end-line="11" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TicketingBundle/EventListener/ExceptionListener.php" />
+    <entry file="file://$PROJECT_DIR$/src/TicketingBundle/Exceptions/SessionNotFoundException.php" />
+    <entry file="file://$PROJECT_DIR$/app/Resources/TwigBundle/views/Exception/error.html.twig" />
+    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="67" selection-start-line="67" selection-end-line="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TicketingBundle/Validator/Constraints/InvalidDateValidator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TicketingBundle/Validator/Constraints/No21HourPastDate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TicketingBundle/Validator/Constraints/NoPastDateValidator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-27">
+          <caret line="3" column="48" lean-forward="true" selection-start-line="3" selection-start-column="48" selection-end-line="3" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TicketingBundle/Validator/Constraints/NoSundayDate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TicketingBundle/Validator/Constraints/No21HourPastDateValidator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-9">
+          <caret line="18" column="74" lean-forward="true" selection-start-line="18" selection-start-column="74" selection-end-line="18" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TicketingBundle/Validator/Constraints/No17HourPastDate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TicketingBundle/Validator/Constraints/NoTuesdayDate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TicketingBundle/Validator/Constraints/No17HourPastDateValidator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="27" column="33" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TicketingBundle/Validator/Constraints/NoTuesdayDateValidator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="25" column="65" selection-start-line="25" selection-start-column="65" selection-end-line="25" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TicketingBundle/Validator/Constraints/NoSundayDateValidator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="11" column="11" selection-start-line="10" selection-start-column="4" selection-end-line="13" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="31" column="35" selection-start-line="31" selection-start-column="35" selection-end-line="31" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/services.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="34" column="41" selection-start-line="34" selection-start-column="41" selection-end-line="34" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TicketingBundle/Validator/Constraints/No2YearsLaterDate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="32" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TicketingBundle/Service/HolidayClosingDaysDatesManager.php" />
+    <entry file="file://$PROJECT_DIR$/src/TicketingBundle/Service/FrenchHolidayDatesManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TicketingBundle/Validator/Constraints/No2YearsLaterDateValidator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
           <folding>
-            <element signature="e#84#124#0#PHP" expanded="true" />
+            <element signature="e#133#176#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TicketingBundle/Validator/Constraints/No14HourPastDateValidator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="e#131#174#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TicketingBundle/Validator/Constraints/NoHolidayDate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" selection-start-line="12" selection-start-column="4" selection-end-line="17" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TicketingBundle/Validator/Constraints/NoHolidayDateValidator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="31" column="9" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
+          <folding>
+            <element signature="e#129#172#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/datepicker.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="666">
+          <caret line="37" column="5" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TicketingBundle/Validator/Constraints/NoHolidayClosingDaysDate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="108" selection-start-line="12" selection-start-column="108" selection-end-line="12" selection-end-column="108" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TicketingBundle/Validator/Constraints/NoHolidayClosingDaysDateValidator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="33" column="1" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
+          <folding>
+            <element signature="e#140#183#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TicketingBundle/Entity/Booking.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="e#85#117#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/Booking/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
+        <state relative-caret-position="243">
+          <caret line="37" column="76" lean-forward="true" selection-start-line="37" selection-start-column="76" selection-end-line="37" selection-end-column="76" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
           </folding>

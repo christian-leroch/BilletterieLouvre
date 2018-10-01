@@ -12,6 +12,12 @@ use TicketingBundle\Validator\Constraints as TicketingAssert;
  * Booking
  *
  * @ORM\Table(name="booking")
+ * @TicketingAssert\NoSundayDate
+ * @TicketingAssert\No14HourPastDate
+ * @TicketingAssert\No17HourPastDate
+ * @TicketingAssert\No21HourPastDate
+ * @TicketingAssert\NoHolidayDate
+ * @TicketingAssert\NoHolidayClosingDaysDate
  * @ORM\Entity(repositoryClass="TicketingBundle\Repository\BookingRepository")
  */
 class Booking
@@ -29,6 +35,10 @@ class Booking
      * @var \DateTime
      *
      * @Assert\NotBlank()
+     * @TicketingAssert\InvalidDate
+     * @TicketingAssert\NoPastDate
+     * @TicketingAssert\NoTuesdayDate
+     * @TicketingAssert\No2YearsLaterDate
      * @ORM\Column(name="ticketDate", type="date")
      */
     private $ticketDate;

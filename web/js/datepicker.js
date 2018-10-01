@@ -19,10 +19,10 @@ function JoursFeries(an){
         var MoisPaques = 3 + Math.floor((L + 40)/44);
         var JourPaques = L + 28 - 31*Math.floor(MoisPaques/4);
         var LundiPaques = new Date(Date.UTC(an+i, MoisPaques-1, JourPaques+1));
-        var Ascension = new Date(Date.UTC(an+i, MoisPaques-1, JourPaques+39));
+        var JeudiAscension = new Date(Date.UTC(an+i, MoisPaques-1, JourPaques+39));
         var LundiPentecote = new Date(Date.UTC(an+i, MoisPaques-1, JourPaques+50));
 
-        joursFeries.push(JourAn, LundiPaques, FeteTravail, Victoire1945, Ascension, LundiPentecote, FeteNationale, Assomption, Toussaint, Armistice, Noel);
+        joursFeries.push(JourAn, LundiPaques, FeteTravail, Victoire1945, JeudiAscension, LundiPentecote, FeteNationale, Assomption, Toussaint, Armistice, Noel);
     }
     return joursFeries;
 }

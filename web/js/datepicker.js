@@ -1,40 +1,40 @@
-function JoursFeries(an){
-    var joursFeries = [];
+function Holidays(year){
+    var holidays = [];
     for ( var i=0; i<= 2;i++) {
-        var JourAn = new Date(Date.UTC(an+i, "00", "01"));
-        var FeteTravail = new Date(Date.UTC(an+i, "04", "01"));
-        var Victoire1945 = new Date(Date.UTC(an+i, "04", "08"));
-        var FeteNationale = new Date(Date.UTC(an+i,"06", "14"));
-        var Assomption = new Date(Date.UTC(an+i, "07", "15"));
-        var Toussaint = new Date(Date.UTC(an+i, "10", "01"));
-        var Armistice = new Date(Date.UTC(an+i, "10", "11"));
-        var Noel = new Date(Date.UTC(an+i, "11", "25"));
+        var NewYearsDay = new Date(Date.UTC(year+i, "00", "01"));
+        var LaborDay = new Date(Date.UTC(year+i, "04", "01"));
+        var Victory1945 = new Date(Date.UTC(year+i, "04", "08"));
+        var NationalHoliday = new Date(Date.UTC(year+i,"06", "14"));
+        var Assumption = new Date(Date.UTC(year+i, "07", "15"));
+        var AllSaintsDay = new Date(Date.UTC(year+i, "10", "01"));
+        var Armistice = new Date(Date.UTC(year+i, "10", "11"));
+        var ChristmasDay = new Date(Date.UTC(year+i, "11", "25"));
 
-        var G = (an+i)%19;
-        var C = Math.floor((an+i)/100);
+        var G = (year+i)%19;
+        var C = Math.floor((year+i)/100);
         var H = (C - Math.floor(C/4) - Math.floor((8*C+13)/25) + 19*G + 15)%30;
         var I = H - Math.floor(H/28)*(1 - Math.floor(H/28)*Math.floor(29/(H + 1))*Math.floor((21 - G)/11));
-        var J = ((an+i)*1 + Math.floor((an+i)/4) + I + 2 - C + Math.floor(C/4))%7;
+        var J = ((year+i)*1 + Math.floor((year+i)/4) + I + 2 - C + Math.floor(C/4))%7;
         var L = I - J;
-        var MoisPaques = 3 + Math.floor((L + 40)/44);
-        var JourPaques = L + 28 - 31*Math.floor(MoisPaques/4);
-        var LundiPaques = new Date(Date.UTC(an+i, MoisPaques-1, JourPaques+1));
-        var JeudiAscension = new Date(Date.UTC(an+i, MoisPaques-1, JourPaques+39));
-        var LundiPentecote = new Date(Date.UTC(an+i, MoisPaques-1, JourPaques+50));
+        var EasterMonth = 3 + Math.floor((L + 40)/44);
+        var EasterSunday = L + 28 - 31*Math.floor(EasterMonth/4);
+        var EasterMonday = new Date(Date.UTC(year+i, EasterMonth-1, EasterSunday+1));
+        var AscensionThursday = new Date(Date.UTC(year+i, EasterMonth-1, EasterSunday+39));
+        var PentecostMonday = new Date(Date.UTC(year+i, EasterMonth-1, EasterSunday+50));
 
-        joursFeries.push(JourAn, LundiPaques, FeteTravail, Victoire1945, JeudiAscension, LundiPentecote, FeteNationale, Assomption, Toussaint, Armistice, Noel);
+        holidays.push(NewYearsDay, EasterMonday, LaborDay, Victory1945, AscensionThursday, PentecostMonday, NationalHoliday, Assumption, AllSaintsDay, Armistice, ChristmasDay);
     }
-    return joursFeries;
+    return holidays;
 }
 
-function ClosingDays(an) {
+function ClosingDays(year) {
     var closingDays = [];
     for (var j = 0; j <= 2; j++) {
-        var FeteTravail = new Date(Date.UTC(an + j, "04", "01"));
-        var Toussaint = new Date(Date.UTC(an + j, "10", "01"));
-        var Noel = new Date(Date.UTC(an + j, "11", "25"));
+        var LaborDay = new Date(Date.UTC(year + j, "04", "01"));
+        var AllSaintsDay = new Date(Date.UTC(year + j, "10", "01"));
+        var ChristmasDay = new Date(Date.UTC(year + j, "11", "25"));
 
-        closingDays.push(FeteTravail, Toussaint, Noel);
+        closingDays.push(LaborDay, AllSaintsDay, ChristmasDay);
     }
     return closingDays;
 }
@@ -50,9 +50,9 @@ function Highlight(date) {
 }
 
 var today       = new Date();
-var an          = today.getFullYear();
-var holiday     = JoursFeries(an);
-var closingDays = ClosingDays(an);
+var year          = today.getFullYear();
+var holiday     = Holidays(year);
+var closingDays = ClosingDays(year);
 
 for (var i = 0; i < holiday.length; i++) {
     holiday[i] = JSON.stringify(holiday[i]);

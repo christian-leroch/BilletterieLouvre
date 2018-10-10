@@ -33,3 +33,5 @@ services:
     # TicketingBundle\Service\ExampleService:
     #     arguments:
     #         $someArgument: 'some_value'
+    Twig\Extensions\IntlExtension:
+        tags: [twig.extension]

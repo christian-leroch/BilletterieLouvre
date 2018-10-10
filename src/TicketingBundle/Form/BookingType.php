@@ -22,7 +22,7 @@ class BookingType extends AbstractType
                     'widget' => 'single_text',
                     'format' => 'dd/MM/yyyy',
                     'html5' => false,
-                    'attr' => ['class' => 'datepicker'])
+                    'attr' => ['class' => 'datepicker hidden', 'id' => 'my_hidden_input'])
             )
             ->add('ticketType', ChoiceType::class, array(
                 'label' => '2 . Choisissez votre horaire d\'accès au musée',

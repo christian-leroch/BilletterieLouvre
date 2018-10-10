@@ -10,4 +10,5 @@ namespace TicketingBundle\Repository;
  */
 class BookingRepository extends \Doctrine\ORM\EntityRepository
 {
+
 }

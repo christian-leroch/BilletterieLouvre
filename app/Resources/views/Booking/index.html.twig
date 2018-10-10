@@ -35,7 +35,7 @@
 
         {{ form_label(form.ticketDate) }}
         <div id="datepicker" data-date="now">
-            <div style="display: none">{{ form_row(form.ticketDate) }}</div>
+            {{ form_widget(form.ticketDate) }}
         </div>
 
         {{ form_row(form.ticketType) }}
